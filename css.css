@@ -50,3 +50,13 @@ button.desencriptar{
     padding: 24px;
     width: fixed 328px;
 }
+.rectangulo {
+    background-color: #ffffff;     /* Color de fondo del rectángulo */
+    border-radius: 32px;
+    top: 40px;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    gap: 0px;
+}
+
