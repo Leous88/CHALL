@@ -28,7 +28,7 @@ body {
 .botones{
     display: flex;
     gap: 24px;
-    display: flex;
+   
 }
 
 button.encriptar{
@@ -51,6 +51,9 @@ button.desencriptar{
     width: fixed 328px;
 }
 .rectangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ffffff;     /* Color de fondo del rectángulo */
     border-radius: 32px;
     top: 40px;
@@ -58,5 +61,10 @@ button.desencriptar{
     height: 944px;
     left: 1000px;
     gap: 0px;
+}
+.texto_respuesta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
