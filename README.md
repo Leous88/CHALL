@@ -41,9 +41,13 @@ Este proyecto es una aplicación web que permite encriptar y desencriptar texto 
 1. Clona este repositorio en tu máquina local:
    ```bash
    git clone https://github.com/Leous88/CHALL.git
-   
-```bash
-cd encriptador-texto
+
+2. Navega al directorio del proyecto:
+    ```bash
+    cd encriptador-texto
+
+3. Abre el archivo index.html en tu navegador para probar la aplicación.
+
 
 
 Licencia
