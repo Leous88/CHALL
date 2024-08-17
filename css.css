@@ -64,23 +64,24 @@ main {
     align-items: center;
     gap: 24px;
     margin-top: 10px;
-    justify-content: center; /* Centra los botones horizontalmente */
-}
-
-button.encriptar, button.desencriptar {
-    border: none;
-    border-radius: 24px;
-    color: #ffffff;
-    gap: 8px;
-    padding: 12px 24px; /* Ajustado el padding para mejor apariencia */
-    cursor: pointer;
+    width: 100%;
 }
 
 button.encriptar {
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    padding: 12px 24px; /* Ajustado el padding para mejor apariencia */
+    cursor: pointer;
     background-color: var(--button1-color);
 }
 
 button.desencriptar {
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    padding: 12px 24px; /* Ajustado el padding para mejor apariencia */
+    cursor: pointer;
     background-color: var(--button2-color);
     color: #0A3871; /* Texto en color específico para desencriptar */
 }
