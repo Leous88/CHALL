@@ -30,7 +30,7 @@ document.querySelector('.desencriptar').addEventListener('click', desencriptarTe
 document.querySelector('.copiar').addEventListener('click', function() {
     // Solo hay un botón de copiar en la sección de resultados
     const resultadoMensaje2 = document.querySelector('.mensaje2');
-    copyTextToClipboard(resultadoMensaje2.textContent);
+    copiarPortaPapeles(resultadoMensaje2.textContent);
 });
 
 // encriptar texto
@@ -66,7 +66,7 @@ function encriptarTexto() {
 
     // Hacer que el mensaje encriptado sea clickeable para copiar al portapapeles
     resultadoMensaje2.addEventListener('click', function() {
-        copyTextToClipboard(encryptedText);
+        copiarPortaPapeles(encryptedText);
     });
 }
 
@@ -103,12 +103,12 @@ function desencriptarTexto() {
 
    // Hacer que el mensaje desencriptado sea clickeable para copiar al portapapeles
    resultadoMensaje2.addEventListener('click', function() {
-       copyTextToClipboard(decryptedText);
+       copiarPortaPapeles(decryptedText);
    });
 }
 
 // Función para copiar texto al portapapeles
-function copyTextToClipboard(text) {
+function copiarPortaPapeles(text) {
     navigator.clipboard.writeText(text).then(() => {
         alert("Mensaje copiado al portapapeles");
     }).catch(err => {
