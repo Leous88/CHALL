@@ -33,28 +33,29 @@ body {
         width: 45%;
     }
 
-/* SECCION 2*/
-.area_ingreso{
+/* SECCION 2 */
+.area_ingreso {
     display: flex;
-    flex:3 ;
+    flex: 3;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
 
-    .texto_ingreso{
+    .texto_ingreso {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 32px;
         color: #0A3871;
-        background-color:var(--background-color);
+        background-color: var(--background-color);
         border: none; /* Elimina el borde */
-        outline: none; /* Opcional: elimina el borde que aparece al hacer clic */   
-        display: flex;
-        width: 100%;
-    
-
-        }
+        outline: none; /* Opcional: elimina el borde que aparece al hacer clic */
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+       
         .texto_ingreso::placeholder {
             color: #0A3871; /* Mismo color que el texto */
             opacity: 1; /* Asegura que el color se vea claramente */
@@ -102,22 +103,37 @@ body {
     height: auto;
     left: 1000px;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
-    .texto_respuesta{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    .muneco{
+  
+        width: 100%;
+    
     }
-        
     .mensaje1{
         font: var(--font-family);
         font-weight: 700;
         size: 24px;
         color: #343A40;
-        }
+    
+    }
     .mensaje2{
         font: var(--font-family);
         font-weight: 400;
         font-optical-sizing: 24px;
             color: #495057;
+
     }
+
+.footer{
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-weight: 700;
+    
+}
