@@ -21,17 +21,31 @@ body {
 
 .main{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 5cap;
 }
+.logo_seccion {
+    display: flex;
+    flex:1 ;
+    align-items: flex-start; /* Asegura que el contenido esté alineado en la parte superior */
+  
+}
+.logoAlura {
+    width: 45%;
+}
 
+.area_ingreso{
+    display: flex;
+    flex:2 ;
+}
 .botones{
     display: flex;
     align-items: center;
     gap: 24px;
     margin-top: 10px;
-    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 200px;
+
 }
 
 button.encriptar{
@@ -55,6 +69,7 @@ button.desencriptar{
 }
 .rectangulo {
     display: flex;
+    flex:1;
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;     /* Color de fondo del rectángulo */
