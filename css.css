@@ -1,7 +1,7 @@
-*{
+* {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,26 +12,26 @@
 }
 
 body {
-  
     background-color: var(--background-color);
     font-family: var(--font-family);
 }
 
-.main{
+main {
     display: flex;
     justify-content: space-between;
-    margin: 5cap;
+    margin: 20px; /* Ajustado de 5cap a 20px para asegurar que haya un margen visible */
 }
-/* SECCION 1*/
+
+/* SECCION 1 */
 .logo_seccion {
     display: flex;
-    flex:1 ;
+    flex: 1;
     align-items: flex-start; 
-  
 }
-    .logoAlura {
-        width: 45%;
-    }
+
+.logoAlura {
+    width: 45%;
+}
 
 /* SECCION 2 */
 .area_ingreso {
@@ -42,98 +42,96 @@ body {
     gap: 10px;
 }
 
-    .texto_ingreso {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 32px;
-        color: #0A3871;
-        background-color: var(--background-color);
-        border: none; /* Elimina el borde */
-        outline: none; /* Opcional: elimina el borde que aparece al hacer clic */
-        width: 90%;
-        align-items: center;
-        justify-content: center;
-        
-    }
-       
-        .texto_ingreso::placeholder {
-            color: #0A3871; /* Mismo color que el texto */
-            opacity: 1; /* Asegura que el color se vea claramente */
-        }
-        .botones{
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 200px;
-        
-        }
-        
-        button.encriptar{
-            background-color:var(--button1-color);
-            border: none;
-            border-radius: 24px;
-            color: #ffffff;
-            gap: 8px;
-            padding: 24px;
-            width: fixed 328px;
-        
-        }
-        button.desencriptar{
-            background-color:var(--button2-color);
-            border: none;
-            border-radius: 24px;
-            color: #0A3871;
-            gap: 8px;
-            padding: 24px;
-            width: fixed 328px;
-        }
-
-/* SECCION 3*/
-.rectangulo {
-    display: flex;
-    flex:2;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffffff;     /* Color de fondo del rectángulo */
-    border-radius: 32px;
-    top: 40px;
-    width: auto;
-    height: auto;
-    left: 1000px;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+.texto_ingreso {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+    width: 100%; /* Cambiado de 90% a 100% para ajustar al ancho del contenedor */
+    padding: 10px; /* Añadido padding para mejor apariencia del textarea */
 }
 
-    .muneco{
-  
-        width: 100%;
-    
-    }
-    .mensaje1{
-        font: var(--font-family);
-        font-weight: 700;
-        size: 24px;
-        color: #343A40;
-    
-    }
-    .mensaje2{
-        font: var(--font-family);
-        font-weight: 400;
-        font-optical-sizing: 24px;
-            color: #495057;
+.texto_ingreso::placeholder {
+    color: #0A3871;
+    opacity: 1;
+}
 
-    }
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+    justify-content: center; /* Centra los botones horizontalmente */
+}
 
-.footer{
+button.encriptar, button.desencriptar {
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    gap: 8px;
+    padding: 12px 24px; /* Ajustado el padding para mejor apariencia */
+    cursor: pointer;
+}
+
+button.encriptar {
+    background-color: var(--button1-color);
+}
+
+button.desencriptar {
+    background-color: var(--button2-color);
+    color: #0A3871; /* Texto en color específico para desencriptar */
+}
+
+/* SECCION 3 */
+.rectangulo {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 20px; /* Añadido padding para espacio interior */
+    width: 100%; /* Ajustado para que ocupe todo el ancho disponible */
+    max-width: 600px; /* Añadido max-width para limitar el tamaño máximo */
+    margin: 0 auto; /* Centrando el rectángulo */
+}
+
+.muneco {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.mensaje1, .mensaje2 {
+    font-family: var(--font-family);
+    text-align: center; /* Centra el texto dentro de los contenedores */
+}
+
+.mensaje1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #343A40;
+}
+
+.mensaje2 {
+    font-weight: 400;
+    font-size: 24px; /* Ajustado para consistencia */
+    color: #495057;
+}
+
+.footer {
     background-color: var(--background-color);
     font-family: var(--font-family);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    color: #0A3871; /* Ajustado para consistencia con el tema */
     font-weight: 700;
-    
+    padding: 10px; /* Añadido padding para mejorar el espaciado */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
