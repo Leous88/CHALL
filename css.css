@@ -98,7 +98,17 @@ button.desencriptar {
     max-width: 600px; /* Añadido max-width para limitar el tamaño máximo */
     margin: 0 auto; /* Centrando el rectángulo */
 }
-
+.texto_respuesta{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 100%; /* Cambiado de 90% a 100% para ajustar al ancho del contenedor */
+    padding: 10px; /* Añadido padding para mejor apariencia del textarea */
+}
 .muneco {
     width: 100%;
     display: flex;
@@ -114,6 +124,7 @@ button.desencriptar {
     font-weight: 700;
     font-size: 24px;
     color: #343A40;
+    padding: 10%; 
 }
 
 .mensaje2 {
