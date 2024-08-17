@@ -5,37 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Leonardo</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <header></header>
 <body>
     <main class="main">
-        <div>
-            <textarea name="ingreso" placeholder="INGRESE SU TEXTO AQUÍ" cols="70" rows="25"></textarea>
+        <div class="area_ingreso">
+            <div>
+                <textarea class="texto_ingreso" name="ingreso" placeholder="Ingrese su texto aquí" ></textarea>
+            </div>
+            <div>
             <button class="copiar"> copiar</button>
-            <p>&#9888 Solo letras minúsculas y sin acentos</p>
-
-            <button class="encriptar"> encriptar</button>
-            <button class="desencriptar"> desencriptar</button>
+            </div>
+            <div> 
+                <p><img src="assets/alerta.png" alt=""> Solo letras minúsculas y sin acentos</p>
+            </div>
+                           
+            <div class="botones">
+                <button class="encriptar"> encriptar</button>
+                <button class="desencriptar"> desencriptar</button>
+            </div>
         </div>
         <div class="rectangulo">
             <div class="texto_respuesta">
-                <textarea name="txt_respuesta"></textarea>
+                <textarea name="txt_respuesta" hidden></textarea>
             </div>
             <div class="muñeco">
                 <img src="images/monolupa.png" alt="monolupa">
             </div>
-            <div class="respuesta1">
-                <h3>Ningún mensaje fue encontrado</h3>
+            <div class="mensaje1">
+                <p>Ningún mensaje fue encontrado</p>
             </div>
-            <div class="respuesta2">
+            <div class="mensaje2">
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <button class="copiar"> copiar</button>
         </div>
        
     </main>
-<script>
-
+<script source="js.js">
 </script>
 </body>
 <footer>Desarrollado por Leonardo Gonzalez M</footer>
